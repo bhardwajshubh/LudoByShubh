@@ -1,0 +1,28 @@
+{
+  "name": "ludobyshubh",
+  "version": "1.0.0",
+  "description": "Online multiplayer ludo game by shubh",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhardwajshubh/LudoByShubh.git"
+  },
+  "author": "Shubh Bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhardwajshubh/LudoByShubh/issues"
+  },
+  "homepage": "https://github.com/bhardwajshubh/LudoByShubh#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
