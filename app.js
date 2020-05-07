@@ -4,6 +4,7 @@ const knexUnConfig = require('knex');
 const pg = require('pg');
 const { Model } = require('objection');
 const knexConfig = require('./knexfile');
+const applicationRoutes = require('./routes/index');
 const app = express();
 
 const knex = knexUnConfig(knexConfig.development);
@@ -13,7 +14,6 @@ app.set("view engine" , "ejs");
 app.use(express.urlencoded({extended : true}));
 app.use(express.static(`${__dirname}/public`));
 
-
-
+app.use('/app' , applicationRoutes);
 
 module.exports = app;
